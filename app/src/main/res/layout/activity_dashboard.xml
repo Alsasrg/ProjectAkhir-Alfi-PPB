@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DashboardActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@drawable/img_kategori">
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="10dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/D.txt1"
+            android:layout_width="380dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppinsbold"
+            android:text="Selamat Datang Di Aplikasi \nKumpulan Do’a lengkap"
+            android:textAlignment="center"
+            android:textColor="#FFF9F9"
+            android:textSize="20sp"
+            android:layout_marginTop="45dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:layout_marginTop="100dp"
+            android:orientation="horizontal">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cdKat1alquran"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:background="@color/primaryColor">
+
+                    <ImageView
+                        android:id="@+id/D.img1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="9dp"
+                        android:layout_weight="40"
+                        app:srcCompat="@drawable/doaalquran" />
+
+                    <TextView
+                        android:id="@+id/D.txt2"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:text="Do’a Berdasarkan Al-Qur’an"
+                        android:fontFamily="@font/poppinssemibold"
+                        android:textAlignment="center"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/D.txt3"
+                        android:layout_width="165dp"
+                        android:layout_height="45dp"
+                        android:text="Beberapa do’a berdasarkan yang tercantum dalam Al-Qur’an"
+                        android:textAlignment="center"
+                        android:textSize="12sp" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cdkat2hadits"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:background="@color/primaryColor">
+
+                    <ImageView
+                        android:id="@+id/D.img2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="9dp"
+                        android:layout_weight="40"
+                        app:srcCompat="@drawable/doahadits" />
+
+                    <TextView
+                        android:id="@+id/D.txt4"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:text="Do’a Berdasarkan \nhadits"
+                        android:fontFamily="@font/poppinssemibold"
+                        android:textAlignment="center"
+                        android:textSize="14sp" />
+                    <TextView
+                        android:id="@+id/D.txt5"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:text="Beberapa do’a berdasarkan yang tercantum dalam Hadits"
+                        android:textAlignment="center"
+                        android:textSize="12sp" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:orientation="horizontal">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cdkat3sehari"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:background="@color/primaryColor">
+
+                    <ImageView
+                        android:id="@+id/D.img3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="9dp"
+                        android:layout_weight="40"
+                        app:srcCompat="@drawable/doasehari" />
+
+                    <TextView
+                        android:id="@+id/D.txt6"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:text="Do’a Sehari-hari"
+                        android:fontFamily="@font/poppinssemibold"
+                        android:textAlignment="center"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/D.txt7"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:text="Beberapa do’a yang bisa diamalkan dalam kehidupan sehari-hari"
+                        android:textAlignment="center"
+                        android:textSize="12sp" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cdkat4sunnah"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:background="@color/primaryColor">
+
+                    <ImageView
+                        android:id="@+id/D.img4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="9dp"
+                        android:layout_weight="40"
+                        app:srcCompat="@drawable/doasunnah" />
+
+                    <TextView
+                        android:id="@+id/D.txt8"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:text="Do’a Setelah Selesai Shalat Sunnah"
+                        android:fontFamily="@font/poppinssemibold"
+                        android:textAlignment="center"
+                        android:textSize="14sp" />
+                    <TextView
+                        android:id="@+id/D.txt9"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:text="Beberapa do’a yang bisa diamalkan setelah selesai shalat sunnah"
+                        android:textAlignment="center"
+                        android:textSize="12sp" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>
